@@ -2,52 +2,28 @@
 using AutoMapper;
 using SgamApp.BLL.Interfaces;
 using SgamApp.BLL.Models;
+using SgamApp.DAL.Entities;
+using SgamApp.DAL.Interfaces;
 
 namespace SgamApp.BLL.Services
 {
-    public class GlossaryService<Entity, Model> : IGlossaryService<Model> where Entity : class where Model : class
+    public class GlossaryService : Service<Glossary, GlossaryModel>, IGlossaryService
     {
-        private readonly IGlossaryRepository<Entity> _repository;
         private readonly IMapper _mapper;
-        public GlossaryService(IMapper mapper, IGlossaryRepository<Entity> repository)
+        private readonly IGlossaryRepository _repository;
+        public GlossaryService(IMapper mapper, IGlossaryRepository repository) : base(mapper, repository)
         {
             _mapper = mapper;
             _repository = repository;
         }
 
-        public void Add(GlossaryModel entity)
+        public GlossaryModel GetByWord(string word)
         {
-            var glossaryEntity = _mapper.Map<Entity>(entity);
-            _repository.Add(glossaryEntity);
-            _repository.SaveChanges();
-        }
-
-        public void Delete(int id)
-        {
-            _repository.Delete(id);
-            _repository.SaveChanges();
-        }
-
-        public IEnumerable<GlossaryModel> GetAll()
-        {
-            var entities = _repository.GetAll();
-            var models = _mapper.Map<IEnumerable<Model>>(entities);
-            return models;
-        }
-
-        public GlossaryModel GetById(int Id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public GlossaryModel GetWord(string word)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(GlossaryModel entity)
-        {
-            throw new NotImplementedException();
+            var entity = _repository.GetByWord(word);
+            if(entity == null) {
+                throw new ArgumentException("Word not found in glossary.");
+            }
+            return _mapper.Map<GlossaryModel>(entity);
         }
     }
 }

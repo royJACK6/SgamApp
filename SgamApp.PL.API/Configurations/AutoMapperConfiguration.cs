@@ -1,4 +1,8 @@
-﻿namespace SgamApp.PL.API.Configurations
+﻿using AutoMapper;
+using SgamApp.BLL.Models;
+using SgamApp.DAL.Entities;
+
+namespace SgamApp.PL.API.Configurations
 {
     public class AutoMapperConfiguration : Profile
     {

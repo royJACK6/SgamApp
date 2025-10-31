@@ -14,7 +14,7 @@ namespace SgamApp.DAL
         {
         }
 
-        public DbSet<Glossary> Dictonaries { get; set; }
+        public DbSet<Glossary> Glossaries { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

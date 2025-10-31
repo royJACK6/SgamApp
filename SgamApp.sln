@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36603.0 d17.14
+VisualStudioVersion = 17.14.36603.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SgamApp.PL.API", "SgamApp.PL.API\SgamApp.PL.API.csproj", "{633E749B-49C2-4E7F-A562-B73E24FEEEF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SgamApp.BLL", "SgamApp.BLL\SgamApp.BLL.csproj", "{9A83CE96-82E7-430C-8BB3-BBDDA31E5851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SgamApp.DAL", "SgamApp.DAL\SgamApp.DAL.csproj", "{C85D5179-D727-40F2-80E7-56FB4EBCCCDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{633E749B-49C2-4E7F-A562-B73E24FEEEF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{633E749B-49C2-4E7F-A562-B73E24FEEEF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{633E749B-49C2-4E7F-A562-B73E24FEEEF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A83CE96-82E7-430C-8BB3-BBDDA31E5851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A83CE96-82E7-430C-8BB3-BBDDA31E5851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A83CE96-82E7-430C-8BB3-BBDDA31E5851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A83CE96-82E7-430C-8BB3-BBDDA31E5851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C85D5179-D727-40F2-80E7-56FB4EBCCCDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C85D5179-D727-40F2-80E7-56FB4EBCCCDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C85D5179-D727-40F2-80E7-56FB4EBCCCDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C85D5179-D727-40F2-80E7-56FB4EBCCCDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

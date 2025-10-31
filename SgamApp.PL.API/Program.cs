@@ -1,6 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using SgamApp.DAL;
+
 using SgamApp.PL.API.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<SgamAppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'SgamAppDbContext' not found.")));
 
 // Add services to the container.
 

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SgamApp.PL.API", "SgamApp.PL.API\SgamApp.PL.API.csproj", "{633E749B-49C2-4E7F-A562-B73E24FEEEF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{633E749B-49C2-4E7F-A562-B73E24FEEEF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{633E749B-49C2-4E7F-A562-B73E24FEEEF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{633E749B-49C2-4E7F-A562-B73E24FEEEF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{633E749B-49C2-4E7F-A562-B73E24FEEEF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACBFD592-E2CF-4561-92E1-F47C1A33B725}
+	EndGlobalSection
+EndGlobal

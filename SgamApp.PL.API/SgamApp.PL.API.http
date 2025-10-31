@@ -1,0 +1,6 @@
+@SgamApp.PL.API_HostAddress = http://localhost:5147
+
+GET {{SgamApp.PL.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

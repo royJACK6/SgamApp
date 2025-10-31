@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SgamApp.DAL\SgamApp.DAL.csproj" />
+  </ItemGroup>
+
 </Project>

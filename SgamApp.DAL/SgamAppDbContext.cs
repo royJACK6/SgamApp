@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SgamApp.DAL
 {
-    public class SgamAppDbContext: DbContext
+    public class SgamAppDbContext : DbContext
     {
         public SgamAppDbContext(DbContextOptions<SgamAppDbContext> options) : base(options)
         {

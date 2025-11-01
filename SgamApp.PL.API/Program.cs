@@ -19,7 +19,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddAutoMapper(typeof(AutoMapperConfiguration));
+builder.Services.AddAutoMapper(cfg => cfg.AddProfile(typeof(AutoMapperConfiguration)));
 
 builder.Services.AddScoped<IGlossaryService, GlossaryService>();
 //builder.Services.AddScoped(typeof(IService<>), typeof(Service<,>));

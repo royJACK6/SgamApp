@@ -11,8 +11,8 @@ using SgamApp.DAL;
 namespace SgamApp.DAL.Migrations
 {
     [DbContext(typeof(SgamAppDbContext))]
-    [Migration("20251031105522_initDB")]
-    partial class initDB
+    [Migration("20251101183031_second-init-db")]
+    partial class secondinitdb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,7 +42,7 @@ namespace SgamApp.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Dictonaries");
+                    b.ToTable("Glossaries");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,7 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using SgamApp.BLL.Interfaces;
+using SgamApp.BLL.Models;
 using SgamApp.BLL.Services;
 using SgamApp.DAL;
+using SgamApp.DAL.Entities;
 using SgamApp.DAL.Interfaces;
 using SgamApp.DAL.Repositories;
 using SgamApp.PL.API.Configurations;
@@ -20,7 +22,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(typeof(AutoMapperConfiguration));
 
 builder.Services.AddScoped<IGlossaryService, GlossaryService>();
-builder.Services.AddScoped(typeof(IService<>), typeof(Service<,>));
+//builder.Services.AddScoped(typeof(IService<>), typeof(Service<,>));
+builder.Services.AddScoped<IService<GlossaryModel>, Service<Glossary, GlossaryModel>>();
 
 builder.Services.AddScoped<IGlossaryRepository, GlossaryRepository>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));

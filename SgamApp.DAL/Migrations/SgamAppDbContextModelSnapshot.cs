@@ -39,7 +39,7 @@ namespace SgamApp.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Dictonaries");
+                    b.ToTable("Glossaries");
                 });
 #pragma warning restore 612, 618
         }

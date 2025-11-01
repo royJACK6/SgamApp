@@ -5,13 +5,13 @@
 namespace SgamApp.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class initDB : Migration
+    public partial class secondinitdb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Dictonaries",
+                name: "Glossaries",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -21,7 +21,7 @@ namespace SgamApp.DAL.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Dictonaries", x => x.Id);
+                    table.PrimaryKey("PK_Glossaries", x => x.Id);
                 });
         }
 
@@ -29,7 +29,7 @@ namespace SgamApp.DAL.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Dictonaries");
+                name: "Glossaries");
         }
     }
 }
